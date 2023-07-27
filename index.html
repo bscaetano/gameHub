@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<script type="text/javascript" src="assets/action.js"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<title> gameHub </title>
+</head>
+<body>
+
+<div class="header">
+	<img src="assets\imgs\banner.png">
+</div>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">Category</a>
+    <a href="#">Blog</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+
+<!-- overlay showGame -->
+<div id="showGame" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeGame()">&times;</a>
+  <div class="overlay-content">
+    <iframe src="assets/games/arkanoid.html"></iframe>
+  </div>
+</div>
+<div id="showGame1" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeGame1()">&times;</a>
+  <div class="overlay-content">
+    <iframe src="assets/games/cyberOrb/index.html"></iframe>
+  </div>
+</div>
+<div id="showGame2" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeGame2()">&times;</a>
+  <div class="overlay-content">
+    <iframe src="assets/games/memoryJS/index.html"></iframe>
+  </div>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<div class="row">
+	<div class="column side" style="background-color: #aaa;">
+		<a href="#"><img src="assets/imgs/promo.png" alt="Yor promos here!" style="width: 100%;"></a>
+		<a href="#"><img src="assets/imgs/promo.png" alt="Yor promos here!" style="width: 100%;"></a>
+		<a href="#"><img src="assets/imgs/promo.png" alt="Yor promos here!" style="width: 100%;"></a>
+	</div>
+	<div class="column middle" style="background-color: #bbb;">
+		<div class="columnInside">
+			<div class="content">
+				<a href="#"><img src="assets/imgs/arkanoid.jpg" alt="Arkanoid" style="width: 100%;" onclick="showGame()"></a>
+				<h3> Arknoid </h3>
+			</div>
+		</div>
+		<div class="columnInside">
+			<div class="content">
+				<a href="#"><img src="assets/imgs/orb.png" alt="CyberOrb" style="width: 100%;" onclick="showGame1()"></a>
+				<h3> CyberOrb </h3>
+			</div>
+		</div>
+		<div class="columnInside">
+			<div class="content">
+				<a href="#"><img src="assets/imgs/memory.png" alt="MemoryGame" style="width: 100%;" onclick="showGame2()"></a>
+				<h3> MemoryGame </h3>
+			</div>
+		</div>
+		<div class="columnInside">
+			<div class="content">
+				<a href="#"><img src="assets/imgs/anotherNiceGame.png" alt="AnotherNiceGame" style="width: 100%;"></a>
+				<h3> AnotherNice </h3>
+			</div>
+		</div>
+		<div class="columnInside">
+			<div class="content">
+				<a href="#"><img src="assets/imgs/anotherNiceGame.png" alt="AnotherNiceGame" style="width: 100%;"></a>
+				<h3> AnotherNice </h3>
+			</div>
+		</div>
+		<div class="columnInside">
+			<div class="content">
+				<a href="#"><img src="assets/imgs/anotherNiceGame.png" alt="AnotherNiceGame" style="width: 100%;"></a>
+				<h3> AnotherNice </h3>
+			</div>
+		</div>
+		<div class="columnInside">
+			<div class="content">
+				<a href="#"><img src="assets/imgs/anotherNiceGame.png" alt="AnotherNiceGame" style="width: 100%;"></a>
+				<h3> AnotherNice </h3>
+			</div>
+		</div>
+		<div class="columnInside">
+			<div class="content">
+				<a href="#"><img src="assets/imgs/anotherNiceGame.png" alt="AnotherNiceGame" style="width: 100%;"></a>
+				<h3> AnotherNice </h3>
+			</div>
+		</div>
+
+		
+	</div>
+	<div class="column side1" style="background-color: #ccc;">
+		<a href="#"><img src="assets/imgs/promo.png" alt="Your promos here!" style="width: 100%;"></a>
+		<a href="#"><img src="assets/imgs/promo.png" alt="Your promos here!" style="width: 100%;"></a>
+		<a href="#"><img src="assets/imgs/promo.png" alt="Your promos here!" style="width: 100%;"></a>
+	</div>
+</div>
+
+<div class="footer">
+	<h4> ©BrunoCaetano :}</h4>
+		<a href="https://www.instagram.com" target="_blank" style="color: black;"><i class="fa fa-camera"></i></a>
+		<a href="https://www.facebook.com" target="_blank" style="color: black;"><i class="fa fa-user"></i></a>
+		<a href="https://www.koo.com" target="_blank" style="color: black;"><i class="fa fa-comment"></i></a>
+		<a href="https://www.twitter.com" target="_blank" style="color: black;"><i class="fa fa-paper-plane"></i></a>
+</div>
+
+<script type="text/javascript">	
+</script>
+
+</body>
+</html>
