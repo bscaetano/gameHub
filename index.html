@@ -1,127 +1,299 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="assets/style.css">
-	<script type="text/javascript" src="assets/action.js"></script>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	<title> gameHub </title>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> GameHub </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+      .cardHover:hover{
+        transform: scale(0.9, 0.9);
+        box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25),
+        -5px -5px 30px 15px rgba(0,0,0,0.22);
+      }
+      @media all and (max-width: 768px) {
+        .promo {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    
+    <header id="home">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/slide/slide.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Something about your game</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/slide/slide1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Something about your game</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/slide/slide2.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Something about your game</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </header>
 
-<div class="header">
-	<img src="assets\imgs\banner.png">
-</div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">GameHub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categories
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Web Games</a></li>
+                    <li><a class="dropdown-item" href="#">Flash Games</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Download Games</a></li>
+                </ul>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            </div>
+        </div>
+    </nav>
 
-<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-    <a href="#">Category</a>
-    <a href="#">Blog</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
+    <main class="container-fluid">
+      <section class="row">
+        <section class="col promo" style="float: left;">
+            <img src="img/promo/promo.png" alt="" class="w-100">
+            <img src="img/promo/promo.png" alt="" class="w-100">
+            <img src="img/promo/promo.png" alt="" class="w-100">
+            <img src="img/promo/promo.png" alt="" class="w-100">
+            <img src="img/promo/promo.png" alt="" class="w-100">
+            <img src="img/promo/promo.png" alt="" class="w-100">
+            <img src="img/promo/promo.png" alt="" class="w-100">
+        </section>
+        <section class="col-7">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100 cardHover">
+                    <a data-bs-toggle="modal" data-bs-target="#arkanoid" style="cursor:pointer;">
+                      <img src="img/game/arkanoid.jpg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                      <h5 class="card-title">Arkanoid - Eternal Battle</h5>
+                      <p class="card-text">
+                        Arkanoid is a block breaker video game. Its plot involves the starship Arkanoid being attacked by a mysterious entity from space named DOH. A small paddle-shaped craft, the Vaus, is ejected from the Arkanoid.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 cardHover">
+                    <a data-bs-toggle="modal" data-bs-target="#memoryjs" style="cursor:pointer;">
+                      <img src="img/game/memory.png" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                      <h5 class="card-title">Memory CardGame</h5>
+                      <p class="card-text">
+                        The game starts with all the cards face down and players take turns to turn over two cards. If the two cards have the same picture, then they keep the cards, otherwise they turn the cards face down again. The winner is the person with the most cards when all the cards have been taken.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 cardHover">
+                    <a data-bs-toggle="modal" data-bs-target="#cyberorb" style="cursor:pointer;">
+                      <img src="img/game/orb.png" class="card-img-top" alt="...">
+                    </a> 
+                    <div class="card-body">
+                      <h5 class="card-title">Cyber Orb</h5>
+                      <p class="card-text">
+                        HTML5 mobile game built with Phaser that uses the Device Orientation and Vibration APIs. In this game you will star the orb whose objective is to hit the hole
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 cardHover">
+                    <a data-bs-toggle="modal" data-bs-target="#jumpmango" style="cursor:pointer;">
+                      <img src="img/game/jumpMan.png" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                      <h5 class="card-title">JumpMan Go!</h5>
+                      <p class="card-text">
+                        Collect all coins on the field to win this game. Completely coded with HTML, CSS and JS, this jumpman game captivates the player's full attention. Pay attention not to fall into the holes and get splashed with some fire on your back.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 cardHover">
+                    <a data-bs-toggle="modal" data-bs-target="#another" style="cursor:pointer;">
+                      <img src="img/game/anotherNiceGame.png" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                      <h5 class="card-title">This is another nice game</h5>
+                      <p class="card-text">
+                        Well, this is a place for another nice game. Put the best game here bro!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 cardHover">
+                      <a data-bs-toggle="modal" data-bs-target="#putGame" style="cursor:pointer;">
+                        <img src="img/game/anotherNiceGame.png" class="card-img-top" alt="...">
+                      </a>  
+                      <div class="card-body">
+                      <h5 class="card-title">This is another nice game</h5>
+                      <p class="card-text">
+                        Well, this is a place for another nice game. Put the best game here bro!
+                      </p>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+        <section class="col" style="float: right;">
+            <img src="img/promo/promo.png" alt="" class="w-100">
+            <img src="img/promo/promo.png" alt="" class="w-100">
+            <img src="img/promo/promo.png" alt="" class="w-100">
+            <img src="img/promo/promo.png" alt="" class="w-100">
+            <img src="img/promo/promo.png" alt="" class="w-100">
+            <img src="img/promo/promo.png" alt="" class="w-100">
+            <img src="img/promo/promo.png" alt="" class="w-100">
+        </section>
+      </section>
+    </main>
+
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#home" class="nav-link px-2 text-body-secondary">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Support us</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">&copy; 2023 BrunoCaetano :}</p>
+    </footer>
+<!-- Modal arkanoid -->
+<div class="modal fade" id="arkanoid" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" style="display: none;" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-4" id="exampleModalFullscreenLabel"> Arkanoid </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="location.reload();"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="games/arkanoid.html" width="100%" height="100%"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="location.reload();">Close</button>
+      </div>
+    </div>
   </div>
 </div>
-
-<!-- overlay showGame -->
-<div id="showGame" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeGame()">&times;</a>
-  <div class="overlay-content">
-    <iframe src="assets/games/arkanoid.html"></iframe>
+<!-- Modal memoryJS -->
+<div class="modal fade" id="memoryjs" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" style="display: none;" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-4" id="exampleModalFullscreenLabel"> Memory JS </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="location.reload();"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="games/memoryJS/index.html" width="100%" height="100%"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="location.reload();">Close</button>
+      </div>
+    </div>
   </div>
 </div>
-<div id="showGame1" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeGame1()">&times;</a>
-  <div class="overlay-content">
-    <iframe src="assets/games/cyberOrb/index.html"></iframe>
+<!-- Modal cyber orb -->
+<div class="modal fade" id="cyberorb" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" style="display: none;" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-4" id="exampleModalFullscreenLabel"> Cyber Orb </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="location.reload();"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="games/cyberOrb/index.html" width="100%" height="100%"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="location.reload();">Close</button>
+      </div>
+    </div>
   </div>
 </div>
-<div id="showGame2" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeGame2()">&times;</a>
-  <div class="overlay-content">
-    <iframe src="assets/games/memoryJS/index.html"></iframe>
+<!-- Modal jumpmango-->
+<div class="modal fade" id="jumpmango" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" style="display: none;" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-4" id="exampleModalFullscreenLabel"> Jumpman Go! </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="location.reload();"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="games/platform/index.html" width="100%" height="100%"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="location.reload();">Close</button>
+      </div>
+    </div>
   </div>
 </div>
-
-
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-
-<div class="row">
-	<div class="column side" style="background-color: #aaa;">
-		<a href="#"><img src="assets/imgs/promo.png" alt="Yor promos here!" style="width: 100%;"></a>
-		<a href="#"><img src="assets/imgs/promo.png" alt="Yor promos here!" style="width: 100%;"></a>
-		<a href="#"><img src="assets/imgs/promo.png" alt="Yor promos here!" style="width: 100%;"></a>
-	</div>
-	<div class="column middle" style="background-color: #bbb;">
-		<div class="columnInside">
-			<div class="content">
-				<a href="#"><img src="assets/imgs/arkanoid.jpg" alt="Arkanoid" style="width: 100%;" onclick="showGame()"></a>
-				<h3> Arknoid </h3>
-			</div>
-		</div>
-		<div class="columnInside">
-			<div class="content">
-				<a href="#"><img src="assets/imgs/orb.png" alt="CyberOrb" style="width: 100%;" onclick="showGame1()"></a>
-				<h3> CyberOrb </h3>
-			</div>
-		</div>
-		<div class="columnInside">
-			<div class="content">
-				<a href="#"><img src="assets/imgs/memory.png" alt="MemoryGame" style="width: 100%;" onclick="showGame2()"></a>
-				<h3> MemoryGame </h3>
-			</div>
-		</div>
-		<div class="columnInside">
-			<div class="content">
-				<a href="#"><img src="assets/imgs/anotherNiceGame.png" alt="AnotherNiceGame" style="width: 100%;"></a>
-				<h3> AnotherNice </h3>
-			</div>
-		</div>
-		<div class="columnInside">
-			<div class="content">
-				<a href="#"><img src="assets/imgs/anotherNiceGame.png" alt="AnotherNiceGame" style="width: 100%;"></a>
-				<h3> AnotherNice </h3>
-			</div>
-		</div>
-		<div class="columnInside">
-			<div class="content">
-				<a href="#"><img src="assets/imgs/anotherNiceGame.png" alt="AnotherNiceGame" style="width: 100%;"></a>
-				<h3> AnotherNice </h3>
-			</div>
-		</div>
-		<div class="columnInside">
-			<div class="content">
-				<a href="#"><img src="assets/imgs/anotherNiceGame.png" alt="AnotherNiceGame" style="width: 100%;"></a>
-				<h3> AnotherNice </h3>
-			</div>
-		</div>
-		<div class="columnInside">
-			<div class="content">
-				<a href="#"><img src="assets/imgs/anotherNiceGame.png" alt="AnotherNiceGame" style="width: 100%;"></a>
-				<h3> AnotherNice </h3>
-			</div>
-		</div>
-
-		
-	</div>
-	<div class="column side1" style="background-color: #ccc;">
-		<a href="#"><img src="assets/imgs/promo.png" alt="Your promos here!" style="width: 100%;"></a>
-		<a href="#"><img src="assets/imgs/promo.png" alt="Your promos here!" style="width: 100%;"></a>
-		<a href="#"><img src="assets/imgs/promo.png" alt="Your promos here!" style="width: 100%;"></a>
-	</div>
+<!-- Modal another nice game -->
+<div class="modal fade" id="another" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" style="display: none;" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-4" id="exampleModalFullscreenLabel"> Another Nice Game </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="location.reload();"></button>
+      </div>
+      <div class="modal-body">
+        <h1> Well, this is a place for another nice game. Put the best game here bro! </h1>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="location.reload();">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
-
-<div class="footer">
-	<h4> ©BrunoCaetano :}</h4>
-		<a href="https://www.instagram.com" target="_blank" style="color: black;"><i class="fa fa-camera"></i></a>
-		<a href="https://www.facebook.com" target="_blank" style="color: black;"><i class="fa fa-user"></i></a>
-		<a href="https://www.koo.com" target="_blank" style="color: black;"><i class="fa fa-comment"></i></a>
-		<a href="https://www.twitter.com" target="_blank" style="color: black;"><i class="fa fa-paper-plane"></i></a>
-</div>
-
-<script type="text/javascript">	
-</script>
-
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
 </html>
